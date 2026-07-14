@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-07-13</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-07-13</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">🎨</span>画像プロジェクトの夏季ストック第2バッチで9枚が採用となり、現在累計41枚で目標60枚の達成に向けて段階的に進行中である。</div><div class="note ask"><span class="em">📌</span>採用率が3.0%に落ちた真因＝「アングルがほぼ同じ・幅が足りない」→ 生成器v2をトラック制（casual/swim/yukata）に作り直し。</div></div>
+<div class="row"><div class="note q"><span class="em">🌀</span>フィルタ設計のバグが原因で特定デザインが生成不可だった問題を3ラウンドで詳細に検証し、重み付きトークンの予算規則（1カード2個・弱概念は短語＋重み1個＋文頭）を確立して量産開始した。</div><div class="note ask"><span class="em">🖼</span>画像精査ツールを :4002 に常設化（quick_gallery使い回し・:4000おかず箱/:4001参考画像箱/:4002精査）＋0.92GB掃除（採用実体を確認してから削除）。</div></div>
+<div class="row"><div class="note sp"><span class="em">💾</span>新HDD東芝2TBをE:立ち上げ。🔑速度39→186MB/s（4.8倍）の犯人はケーブルでなくUSB2ポート（物理プロパティで確定・推測でなく）。</div><div class="note ask"><span class="em">📌</span>SMART PASSED。</div></div>
+<div class="row"><div class="note ask"><span class="em">🩺</span>旧Seagate3TBを「壊れた」と誤診しかけて救出。</div><div class="note res"><span class="em">☁️</span>画像処理ツールをクラウドストレージからローカルのD:に移設（7.5GB・9,537ファイル・29スクリプト修正）し、コンテンツ規約リスク対策の一環としてLLMサービス連携を再検討する方針とした。</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>マーカーファイル+HTTP取得で新パス参照を実証してから旧削除。</div><div class="note ask"><span class="em">🛡</span>バックアップ体制を構築（一点物＝memory/思い出/LoRA/.claude まで拡張・10ジョブ46GB日次AM5時自動化）。</div></div>
+<div class="row"><div class="note q"><span class="em">🔑</span>自作ガードの空判定バグ（思い出2164枚を黙ってスキップ）を同日作った失敗通知が捕獲。ガードに「正常な姿の推測」を混ぜない。</div><div class="note ask"><span class="em">🎮</span>限界突破ダンジョン：無双化＋進行を数式で反転。</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>「レベルが効かない逆勾配」を設計生成workflowで診断→反転（spike-and-coast）＋ボス周回ループ＋ダメージ表示。敵対レビューが実装前に致命点多数を捕捉。</div><div class="note ask"><span class="em">🔀</span>local-tools-serverの142コミットを本流masterへff回収（feature/aitalkに孤立してた）。</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>画像プロジェクトの投稿用補完素材ライブラリ拡張の実装が完了し、公開準備の次段階へ移行する予定である。</div><div class="note ask"><span class="em">📢</span>X（build in public / x-dev）: 「守れてないバックアップ」投稿済み（れいあ直し4回＝抽象語でなく具体物の姿で見せる／読点で誤読を防いでる箇所は語順を疑う）。</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>※x-dev未投稿草案が溜まり気味（棚卸し要）。受託はbuild in public非対象。</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">🎮</span>今日も一日、限界突破ダンジョンの手触り調整＆ゲーム性向上とシューティングゲーム（東方風STG練習ツール）の弾幕調整がメイン。</div><div class="note ask"><span class="em">📌</span>限界突破ダンジョンはベースシステムは固まってきたけど、安定してるのは戦闘の基礎くらいで、ステージ設計やゲームデザインの調整で大きな改修が必要になった。</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>STGはプレイ→FB→調整をひたすら反復。「作る＝遊び」が地でいってる。</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">🧩</span>レベルデザイン/ゲームバランス/演出の壁。触り心地（UI）はある程度知見があるけど、レベルデザインはほとんどやってこなかった領域で、どうすればいいか試行錯誤中。</div><div class="note q"><span class="em">🌀</span>「どうすればよくなるか」をAIに具体的に指示できず、トライ＆エラーでひたすら調整する状態。→ このノウハウを学びたい／苦手を補うAIに育てたい（→🖊一言・明日リアと扱う）。</div></div>
+<div class="row"><div class="note ask"><span class="em">😶</span>‍🌫️ SNSで感じる自己過小評価。</div><div class="note ask"><span class="em">📌</span>「みんなAIの使い方がうまい、やりたいことを具体的に再現できててうらやましい」「特にFableの使い方」「わたしは作りたい物自体があんまりない、具体的アイデアを言葉にできなくて自信がなくなる」。</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>SNS採用案を出しても「既にやってる」と言われることが多く、どう成長すればいいかわからない、と。→ 比較の分母ズレ（成功の断面だけ見える／れいあは違和感ドリブンで既に前進している）＝リア側で事実ミラー＋明日整理。</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
