@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-07-12</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-07-12</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">🎨</span>AI画像生成による夏向けコンテンツの初回バッチは316枚から32枚を採用、採用率10.1%。</div><div class="note res"><span class="em">✅</span>れいあFB「似た構図・腕組みが半分以上」から生成器を4点根治（ポーズ18種化＋手の動作明示／構図に引き・俯瞰・煽り／淡色キャミ漏れ＝COVERを服の直後へ移動で解消／浴衣の襟を肯定形描写）。</div></div>
+<div class="row"><div class="note q"><span class="em">⚠️</span>ネガに重みを盛ると画質崩壊→撤回。</div><div class="note ask"><span class="em">📌</span>受託を初めて ccterm オーケストレーター経由で運用＋仕組み側（Stopフック絶対パス化・ルール層に既定明文化）も整備。</div></div>
+<div class="row"><div class="note res"><span class="em">🗨</span>SNSアカウント向けの第29週コンテンツについて、テキスト要素7本分の充填作業が完了した。</div><div class="note sp"><span class="em">🔑</span>発見①カメラ目線は のハードコードだった（input.gaze で外せるように＋seed記録）。</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>発見②セリフは語尾でスタンスを決める（・manga-1koma-playbook §2-0新設）。💧水は描かせない方が水やりに見える。</div><div class="note ask"><span class="em">🖥</span>サーバー管制パネル 新規完成（玄関口:15472からローカルサーバーを起動/停止・研究室に動線タイル）。</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>実装=開発部るん委譲、るんがnetstat cp932デコードの「停止空振り」致命バグを捕獲修正。</div><div class="note ask"><span class="em">🎮</span>限界突破ダンジョン：アリーナ戦闘土台 → 本体=オープンワールド探索RPGへ大転換＋P1実装（れいあ判定＝“歩いて冒険できる・マップを埋めたい感”でP1ゲートYES）。</div></div>
+<div class="row"><div class="note q"><span class="em">🌀</span>AIエージェント分業（Fable=設計／Codex=実装／Claude=懐疑レビュー＋バグ潰し）。</div><div class="note ask"><span class="em">📢</span>X（build in public / x-dev）: 「買えない商品リンク」投稿済み／カメラ目線ビフォーアフターを18:00予約／当日過去ガードをx-dev枠へ配膳。</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>受託案件はbuild in publicに出さない。</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">🎮</span>1日中、シューティングゲーム（東方風STG練習ツール）と限界突破ダンジョンの開発。</div><div class="note ask"><span class="em">📌</span>デバッグや触り心地の確認もしていたので、ある種ゲームで遊んでいたとも言える（れいあ談）。「作る＝遊び」が地でいってる日だった。</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
