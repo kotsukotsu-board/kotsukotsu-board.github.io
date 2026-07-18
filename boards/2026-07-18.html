@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-07-18</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-07-18</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>週次レビューW29を完走（15ステップ）。実相＝「出す」への転換を想定していたのに、実際に出たのは検証と自己点検の週だった</div><div class="note ask"><span class="em">→</span>W30は平日5日を日別タスクまで具体化（「目標が機能してない」というれいあFBへの答え）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>来週の投稿を3チャネル分すべて予約：画像配信プロジェクト2サイト16件・SNS7本・ゲーム関連アカウント7枚+テキスト7本・AI関連アカウント7本</div><div class="note ask"><span class="em">📌</span>7/20〜26が朝も夜も埋まった状態</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>AIプロジェクトの配膳を恒続的に自動化：未使用画像78枚をAI認識で一括ラベリングして辞書化し、自動生成と残量ガードを組み込んだ</div><div class="note ask"><span class="em">📌</span>れいあの手供給ゼロで2週間先まで補充される（マイクラ型）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>生成画像の色が全白に収束する原因は、土台プロンプトに埋め込まれていた白い衣装の記述であった</div><div class="note ask"><span class="em">📌</span>生成画像のアングルが正面に固定される原因：プロンプトでは角度制御ができない仕様で、学習モデルの角度制御機能が必要</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>生成品質の崩壊率を30%から0%まで低減。出力形式も標準衣装パターンに再編成して10タイプに統一した</div><div class="note sp"><span class="em">💡</span>「出せてない在庫9本」の正体を実態照合したら、ほぼ全部すでに公開済みだった。真の純増在庫は note 2本だけ→そのまま公開</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>押す寸前で止まったのが大きい：ドラフトで上書きしていたら、サイト最上位記事（表示16,710）を一世代前の文章に戻すところだった</div><div class="note ask"><span class="em">📌</span>生成の入口を配線：設計カード（何を練習させるか宣言）＋類似lint（型の被り検出）。原因は「知識は溜まってたのに生成時に強制する配線が無かった」（渦系88%）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>質の検証の層：lintに完全安地検出（自機狙い除外）/下段カバー/咎め依存/ボス範囲＋HTMLプレビュー（実装前に見た目＋安地を確認）</div><div class="note ask"><span class="em">📌</span>033→v2→v3で安地を当てずっぽうに3連続作った→検証の層で抜けて、veillattice（棘なし・拘束だけ・完全安地ゼロ）を実装前確認しながら作れた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>プレイエリアを東方比率に（横幅±4.0/速度5.6/判定0.043）</div><div class="note sp"><span class="em">★</span>自分の発見：①「実装前に弾幕を見たい」→プレビュー作成 ②設計契約を自分で言語化 ③「コンセプトを持って安地を潰す・球数で埋めるな」 ④「動くボス＋全方位」のアイデアが的中（球数増やさず安地ゼロ）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>開発してる時が一番楽しい、を地で行った一日</div><div class="note ask"><span class="em">📌</span>34本作ったのに練習ツールとして生かせている点はゼロ、という自己申告を Fable に読ませて診断（14分・$1.21）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>出た答え＝測る道具はAIセッション内で閉じるが、伸ばす道具はれいあの実機プレイでしか閉じないという非対称</div><div class="note ask"><span class="em">📌</span>だから同じ設計書の中でも、シム内で完結する diagnose だけが実装されていた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>lintを既存33本に初めて流した（誰も流していなかった）。完全安地1159セルなど、れいあが手で遊んで体感で見つけていたものを、機械は2秒で出せた</div><div class="note ask"><span class="em">📌</span>献立ループが初成立：「イージー、ノーマル、ハードって感じがしてよかった」＝○×△だけで回収でき、言語化を要求しない回収の形が通った</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>新型スペル 035 moontide（完全安地31→0）。れいあ判定「これまでに比べるとかなりいい状態」</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>（今日はなし。土曜の週課に集中した1日だった）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>「日常はあんまりなかった、週課の作業を中心にやっていた」（れいあ）。土曜＝週課の日、という形が実際の運用として定着してきている</div><div class="note sp"><span class="em">🌱</span>気づき＝「週に1回しっかり作業していこう」：今日1日やれば1週間回る状態になった、という手応えから出た運用方針</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>裏を返すと、貯めた分を1日に畳む重さが土曜に集中する形でもある</div><div class="note q"><span class="em">🌱</span>詰まりの種①＝自動化の壁：「画像の選定とか、わたしが調整しないといけない項目ばっかりでAIで自動化できないのがもどかしい」</div></div>
+<div class="row"><div class="note ask"><span class="em">→</span>判断そのものを渡すのでなく「選ぶ回数を減らす／選ぶ材料の質を上げる」方向で消せないか、週次レビューで扱う</div><div class="note q"><span class="em">🌱</span>課題②：AIプロジェクトの成長鈍化。『成果が芳しくない。改善の必要性は感じるが、具体的にどう対策すべきか不明瞭だ。』</div></div>
+<div class="row"><div class="note ask"><span class="em">→</span>「何をしたらいいかわからない」は怠慢ではなく、打ち手の候補が出ていない状態</div><div class="note ask"><span class="em">📌</span>次の週次レビュー or ミノリ枠で「伸びの実測→ボトルネック特定→打ち手2〜3個」まで落とすのが筋</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
