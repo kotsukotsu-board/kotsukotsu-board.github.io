@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-07-19</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-07-19</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>ライブ計測を復旧（原因はAPIクレジットでなくCDPログイン・所要3分）。W26→W29で 9→30投稿・166→1,252imp・1本平均18.4→41.7</div><div class="note sp"><span class="em">🔴</span>ただし自分の「事象がある投稿は届く＝20倍差」を盲検ラベルで否定（中央値1.37倍）。時刻集計もUTCのままで結論が逆だった</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>inspector が op の status を見ておらず paused を鳴らし続けていた（点検対象 9→1件）</div><div class="note ask"><span class="em">📌</span>本丸＝テストの既定 catalog パスが実ファイルで、テストを走らせるほど「最近活動している」ことになっていた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>conftest に実データ保護ガードを新設（7ファイル監視・故意汚染で検出と復元を実証）</div><div class="note ask"><span class="em">📌</span>手動投稿は仮リーチ制限への意図的な設計判断と判明＝自動化せず手数だけ下げる方針。3本目を投稿</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>「未投入0件」は偽陰性で、EWC 2026 LoL の速報記事が origin/main に降りていた＝あと1日で死んでいた。日付を最終日基準に直して14:00公開</div><div class="note sp"><span class="em">💡</span>CTR施策2本をベースライン凍結して8/2判定へ（post168 タイトル41→26字／post305 冒頭を結論ファースト）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>3本目は前提を確認せず打っていたので判定対象から外した</div><div class="note ask"><span class="em">📌</span>在庫番頭アラート 2件→0件。GSCは順位横ばいで表示が減少＝需要側の縮小</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>lint全34本を受験＝WARN163件のうち102件が誤検知と判明（修正後90件・回帰なし）</div><div class="note res"><span class="em">✅</span>献立ループ2周＝031（生涯13%）を3挑戦で2回取得・029/030も一発クリア＝上達仮説ほぼ確定</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>○×△の回収はれいあの練習ループに自己評価の工程が無いため撤回</div><div class="note res"><span class="em">✅</span>おかず連番「なんか違う」＝配線の抜け3本（画角未指定240/240・場所に時刻語が焼かれ11件矛盾・内装アンカー無し）を修正</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>フキダシ屋のしっぽ＝未実装でなくエンジンにあってGUIが送っていない死蔵機能の配線だった</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>「目立った作業がなかった」日の余白で、れいあが自力で3本進めた＝東方風神録の練習・シューティングの弾幕作成・限界突破ダンジョンの開発の続き</div><div class="note ask"><span class="em">🔋</span>引っかかり＝「本当は開発を優先したいけど、Claude Code のトークン制限があるからある程度抑えないと一瞬で週制限を迎えそう」</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>限界突破ダンジョンの Behavior Golden Capture-Compare → 黄Warningのみ確認 → を自分で削除 → 再実行（CAPTURED）、という一連のフローが面倒</div><div class="note ask"><span class="em">📌</span>れいあの疑問＝「なんでわざわざこっちで削除しないといけないのかがわからない。黄Warningのみだった場合は自動で削除＋再実行すればいいのに」</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>現物確認＝赤(Error)は Arena 発散・黄(Warning)は Explore のみ発散という意味のある区別（BehaviorGoldenTool.cs:47-56）</div><div class="note ask"><span class="em">📌</span>ただし「手でファイルを消す」工程に意味はない＝ここは削れる</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>同じ確認をちょこちょこ繰り返していて、これを無くしたい</div><div class="note ask"><span class="em">📌</span>(b) やったはずの作業がまたリマインドされる／別セッションで並行して進めている内容にもリマインドが入って煩わしい</div></div>
+<div class="row"><div class="note res"><span class="em">📌</span>今日の実測＝れいあが挙げた2件のうち「Fable設計書レビュー」は本当に完了していた（todos側の記録漏れ＝当日2回起きた「todos が実態より古い」の3回目）</div><div class="note res"><span class="em">✅</span>「追従占有7本」は7本のJSONが7/13〜14から未変更＝2回測っただけで未修正だった。⇒ 煩わしさの半分は誤報、半分は本物</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>リマインドの出し方（承認gate待ちは畳む／着手前に現物照合）を仕組み側で直す対象</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
