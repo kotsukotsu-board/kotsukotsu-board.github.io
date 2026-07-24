@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-07-24</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-07-24</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>午前 ブログ（leia-talks / eldoria）</div><div class="note ask"><span class="em">📌</span>日中 Marble Mill（旧 Bounce and Collect）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>夕方 声ゲート Phase A 締めレビュー</div><div class="note ask"><span class="em">📌</span>夕方 週の「届ける」まとめ</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>夜 Unity CLI 検証（れいあ「試してみたい」発・予定外）</div><div class="note ask"><span class="em">📌</span>22時10分より、画像販売プロジェクトの検証に向けた複数パターンの素材蓄積と準備作業を進めた</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>現在地の自己申告＝「形にはなってきた」→ 残りは細かい挙動の調整とステージ作成</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>① 違和感の検出（触って「なんか違う」に気づく）＝◎ 強い</div><div class="note ask"><span class="em">📌</span>② 診断（なぜそうなってるかを言葉に）＝○ 枠さえあれば埋められる</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>③ 解法の引き出し（じゃあどう直す）＝△ ここが空＝穴はここだけ</div><div class="note ask"><span class="em">⭐</span>③は才能でなく在庫（棚が空なだけ）という再フレーム</div></div>
+<div class="row"><div class="note sp"><span class="em">💡</span>事実ミラー材料＝7/13の進行rework（逆勾配の発見→指数反転）・「引き撃ちするだけのゲーム」の4分割診断・7/15 spell_018 の3方向矛盾を手の感触で自力診断（lintを上回った）・7/14 の優先軸明言・7/21「工夫して勝つ爽快感」への目的進化</div><div class="note ask"><span class="em">📌</span>補助材料＝7月の方向転換4回（アリーナ型ローグライト→2Dオープンワールド探索RPG→無双主軸＋ボス弾幕味→7/21「工夫して勝つ爽快感」）＝飽きでなく「売りが1行で決まってないゲームの典型症状」と整理</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>素材集め→クラフト（モンハン型）が好き。特に「素材集めを効率化すること」が好き</div><div class="note ask"><span class="em">📌</span>お店経営系（アニメも好き）＝作ったアイテムを店に出品して経営する。参照＝オンリーセンスオンライン</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>戦闘システムはどれも好き＝テラリア/ルーンファクトリー型アクション・ドラクエ型コマンドRPG・放置系。いろいろ作れれば</div><div class="note ask"><span class="em">📌</span>2D/3D問わないが、アセット都合で2Dが作りやすい</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>ストーリーが欲しい＝半分なろう系（普通の主人公が特別なスキルを手に入れて活躍する物語）</div><div class="note ask"><span class="em">📌</span>短時間で気軽に遊べる×遊びごたえ・奥が深い＝インフレーションRPG／魔女の塔型（＝限界突破ダンジョンの系譜）</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
