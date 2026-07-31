@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-07-31</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-07-31</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>れいあの「全部が中途半端になっている気がして」から始まった回。レイアウト調整ではなく遊びの方向の決め直しとして扱った</div><div class="note q"><span class="em">🌀</span>診断＝悩み3件は全部同じ症状「どの画面にも主役が2人以上いる」。着せ替えた姿が76px紙人形と200px立ち絵の2箇所に、どちらも小さく出ていた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>採用＝C案「1画面1主役に割り直す」（遊びのルールは1つも変えず、置き場所だけ変える）</div><div class="note ask"><span class="em">📌</span>実測＝冒険の主人公 76→148px／すがた画面（新設）の立ち絵は面積で約6倍／冒険画面のスクロール0。テスト 624→638件緑</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>絵を大きくした方法は「寄る」ではなく役者の層だけ1.95倍＝背景は不変なので、R9・R10で合わせた動きの比率が1つも狂わず80箇所のpxを書き換えずに済んだ</div><div class="note ask"><span class="em">📌</span>れいあ要望「毎回ポートが変わってスマホで開くのが大変」→ 🆕</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>原因は 4173 が埋まると vite preview が自動で繰り上げる仕様。デプロイで問題ごと消えた</div><div class="note ask"><span class="em">📌</span>Safari のダブルタップ拡大も止めた（ピンチ拡大とスクロールは残す＝低視力配慮を壊さない）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>れいあ発言＝「今はFF14やっていて確認できないから、私のチェックがいらない作業から進めてほしい」</div><div class="note sp"><span class="em">🔑</span>これを受けて autopilot がFF14中モードに切り替わった＝実機で触らないと終われないタスクを積まず、文書・計測・テストで完結するものを優先</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>以降の補充では「れいあが確認できない」条件も判定軸に足した</div><div class="note ask"><span class="em">🎉</span>ファントムウェポン完成＝装備の到達点をひとつ取った日</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>フォークタワー：魔の塔 10回クリア＝周回もしっかり回した</div><div class="note sp"><span class="em">🔑</span>開発の自走が「れいあのチェックが要らない作業」だけを進めていた裏で、れいあ側もちゃんと自分の目的を進めていた＝同じ時間で2本走った形</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
