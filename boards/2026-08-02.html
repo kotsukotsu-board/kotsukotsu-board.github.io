@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-08-02</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-08-02</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note sp"><span class="em">🔑</span>「操作が少ないぶん、何かに力を入れないと成立しない」＝設計の芯を自分で言い当てている。放置ゲームは手が離れている時間が長いぶん、戻ってきた時に増えているものが要る</div><div class="note ask"><span class="em">📌</span>いまは増えるのが衣装だけ</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>連載①の投稿はこの作り替えを待たない方針で合意（連載＝育っていく過程を見せるもの）</div><div class="note sp"><span class="em">🔑</span>従来は題材ベースで振り分けていたが、複数領域に属するプロジェクトが増えたことで、既存ルールでは配信先の判定ができない領域が生じた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>切り口ベースにすると決まる＝ルールが1段階きれいになった</div><div class="note sp"><span class="em">🔑</span>れいあは動画の警告対象のど真ん中ではない（本業でC++/Unityを書いてる現役エンジニア）</div></div>
+<div class="row"><div class="note q"><span class="em">🌀</span>監査の結論は「グチャグチャではない」。同じ不安は再燃するので、記録が残っていること自体が効いた</div><div class="note q"><span class="em">→</span>コード読みドリル（実コードにバグを1個仕込んで探させる）＋パッケージ門番を作った</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>「得意なところと苦手なところを自分で切り分けている」のが大きい</div><div class="note ask"><span class="em">📌</span>判定（遊んで良し悪しを言う）は手放さず、調整（数字をどういじるか）だけ仕組みで補いたい、という言い方になっている</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>リアが調べたら、苦手の正体は数字への弱さではなく「感想 → どのツマミを回すか」の翻訳が無いことだった</div><div class="note ask"><span class="em">📌</span>ツマミどうしが独立していない（片方を回すと別の指標も動く）ので、表にすれば消える種類の苦手</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>「CCでプレイテスト」はもう半分動いていた＝R16 で作った自動プレイ（48時間ぶんが数秒）と、実ブラウザの自動検証（29項目）</div><div class="note ask"><span class="em">📌</span>足りないのは「ツマミを振って比べる」ところだけ</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>実感を鵜呑みにせず、フリーランス案件19件・85判定を機械集計して的を決めた</div><div class="note ask"><span class="em">📌</span>結果＝C# ×0 / Unity ×0 / C++ ×0＝「読まない書かないで力が落ちた」形跡はデータに無い。必須の64%は○</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>練習で埋まる穴は実質1つ＝UnitTest（必須×5件のうち2件。残り3件＝ASP.NET・バトルシステム・MES/SAP は領域違いで練習の対象外）</div><div class="note ask"><span class="em">📌</span>最頻出の△は「モバイル実務5年に対し4年」＝案件を1本こなすしかない</div></div>
+<div class="row"><div class="note q"><span class="em">⚠️</span>同じ実績を案件によって○にしたり△にしたりしていた（パフォーマンスチューニング＝案件5・6では○、案件7・10・19では△）</div><div class="note ask"><span class="em">📌</span>管理ログ本文にも「本来は書けた・過小評価の可能性」と自分で書いてある＝実力でなく自己評価のブレ。判定表を1枚持てば消える</div></div>
+<div class="row"><div class="note ask"><span class="em">→</span>練習は「自分のコードにテストを書く」1本に決定（読む練習にもレビュー練習にもなる・スキルシートの×も消える）</div><div class="note ask"><span class="em">📌</span>教材＝（お手本4本 緑＋宿題5本 赤）。集計＝D:</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>遊べた量は「少し」。今日は開発が主だった（並行セッション7本＋autopilot 9周）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>ゲームができない理由が 1枚のGPUの取り合い（X投稿用の画像生成 ↔ FF14）</div><div class="note ask"><span class="em">📌</span>これは -07（画像生成をRunPodへ出す）の動機に足せる材料</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>これまでの判断軸は「止め忘れ課金が起きない形」「速度」だけで、趣味の時間が削れているという軸は入っていなかった</div><div class="note q"><span class="em">⚠️</span>断定はしない＝「あまり遊べなかった」の原因がGPUだけかは未確認（深夜まで開発が続いた時間そのものも効いている）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>れいあが自分で確かめられる＝次にFF14をやりたい時、生成を止めて遊べたかどうか</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
