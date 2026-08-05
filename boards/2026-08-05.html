@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-08-05</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-08-05</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note res"><span class="em">🎬</span>生成AIモデルをローカルで動かす実装が完了（専用環境・既存プロジェクト環境は保護）。制限コンテンツ対応も確認済み、ローカル運用のみ</div><div class="note ask"><span class="em">📌</span>RunPodは規約で永久BANリスクがあると分かってクラウド不可が確定（実測 $0.46≒70円で撤退）</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>れいあの指摘でリアの仮説が2つ崩れた</div><div class="note sp"><span class="em">🔑</span>目標にしてた動画はクラウド版だった（右下にウォーターマークがあった）。ローカルの864x480では構造的に届かない＝解像度を上げるしかないと判明</div></div>
+<div class="row"><div class="note ask"><span class="em">🌙</span>夜間自走ループを実装。寝てる間に解像度の天井を測って、1変数ずつ振って、動画を機械が採点する形</div><div class="note ask"><span class="em">📌</span>採点が れいあの体感と一致することは実物で検証済み（れいあが「おかしい」と言った動画だけ数値がガクッと落ちてた）</div></div>
+<div class="row"><div class="note ask"><span class="em">💼</span>エージェント案件を2件判定。1件は出して、1件は畳んだ（必須スキルが1つ未経験だったから）</div><div class="note ask"><span class="em">📌</span>方向が良くても必須が欠けてたら出さない、をいちばん惜しい相手で守れた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>逆順だと必ずもう一往復いる</div><div class="note ask"><span class="em">🤖</span>autopilot 12周で自主停止（溜め箱9件・れいあの手が25分かかってライン超え）。コミット6本＋提案リポの10分割</div></div>
+<div class="row"><div class="note ask"><span class="em">🎮</span>Marble Mill：ゲートの上限9本を「作る側だけ」に入れた（既存の型が読み込めなくなるのを避けた）。テスト335件ぜんぶ緑</div><div class="note ask"><span class="em">🎮</span>お姫様の庭：数値のツマミを3経路とも当てて全部潰れた。下げるとれいあの手のほうが先に死ぬと実測で出た ⇒ 構造でしか直らないと確定</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>4回外したところで止めた</div><div class="note ask"><span class="em">🖼</span>ImageLab：貼ってくれたローアングルの記事を実測 → 構図のタグは書く場所が違うと効かないと判明（プリセット側に短く置けば効く／文章で足すと薄まって服まで変わる）</div></div>
+<div class="row"><div class="note res"><span class="em">💬</span>Xのリプ返信を1本送信。締めの2行をれいあが差し替えて、その理由も回収できた</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📱</span>スマホでシャドウバース。動画生成を回してる間はPCが使えないので、その待ち時間に</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>「動画生成中はPC作業が何もできない」＝待ち時間という新しい制約が出てきた。れいあ談＝1日の半分くらいは動画生成に使っていて、その間はスマホゲームに逃げるしかなかった</div><div class="note sp"><span class="em">🔑</span>専門っぽい側より、実物を見てる側が当たることがある。今日は れいあの指摘でリアの仮説が2回崩れた。1回目は作例を見に行かせた指摘、2回目はRAMの話</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
