@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-08-09</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-08-09</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note sp"><span class="em">🔑</span>5本とも同じ作法で揃えた＝健全なら完全に黙る／外部を叩かない／確認できていない時は黙らない</div><div class="note sp"><span class="em">🔑</span>効く形の条件が今日も再現＝次に必ず通る場所に置く</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>対策は2本立て＝(a)作業札（1セッション1ファイル・旗であって鍵ではない・ 配下は判定対象外）(b)実際に起きた形だけを止めるガード</div><div class="note ask"><span class="em">🔴</span>れいあの混乱の発生源の半分はリア側の出し方だった＝/secretary と打っただけなのに3案件を混ぜて提示した事故を、自分の事故として設計書に記録し規約に落とした</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>原因＝ の exclude から .pytest_cache / .mypy_cache / .ruff_cache が落ちていただけ</div><div class="note q"><span class="em">⚠️</span>データは1件も失われていない（Files: FAILED 0）＝転んだのはディレクトリ4つで、壊れていたのは信号のほう</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>21:36 に本番で緑を実測（status: ok / failedJobs 空）</div><div class="note sp"><span class="em">🔑</span>3-2-1 棚卸しの結論＝本当に失いたくないものは小さい（思い出263MB＋仕事235MB＋本業602MB＋.claude 3.13GB ＝約4.3GB）⇒ クラウド無料枠で3本目が成立する</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>マジックコード＝ランク別レベル上限を「芯を守る装置」として実装／自由依頼の報酬を経験値からお金・素材へ付け替え／実機判定は4問とも○／門を北へ（絵の反転では済まず、門だけ位置を作り直した）</div><div class="note ask"><span class="em">📌</span>お姫様の庭＝知らせを「起きた場所の上で言う」へ全面的に作り替え（画面が仕組みと違うことを言っていた箇所を4つ潰した）／通路の速さを揃えて見た目の開き 2.15倍 → 1.01倍・勝ち筋は完全一致／お姫様の切り札を実装</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>衣装アトリエ＝間取り → 盤UI → 工房拡張を6工程6人まで／キャラ表示を紙人形からスプライト方式へ（れいあ判定＝見た目は紙人形よりいい）</div><div class="note q"><span class="em">🌀</span>124frames（5秒）を解禁（8/07 の「61f上限」を撤回）。⚠️ 判定の前に検証の穴を1つ塞いだ＝シートの既定が前半フレームで、後半を見ていなかった</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>歩行スプライトを動画から機械的に起こせた＝腰の高さの波形で16フレーム周期を検出 → 18/22/26/30 を採用。中心xが全フレーム固定で位置合わせ不要</div><div class="note ask"><span class="em">📌</span>プロンプトの書き方が3つ確立（秒数でタイムラインを切る／面積が変わる動きに翻訳する／余白はモーションごとに要る量が違う）</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>コマの選択は人がやる（れいあ判断）＝機械は「抜く・透過する・並べる」まで</div><div class="note ask"><span class="em">📌</span>pr部を独立リポ化（d059ad5・474ファイル / 2.65MB）</div></div>
+<div class="row"><div class="note sp"><span class="em">💡</span>note のタグ付け替え3件＝決着（20種を実測してから並べた＝#ファイル管理 が575本の死に枠だと分かった）。🔴 効果は断定しない（3本同時変更・流入経路を分けていない）</div><div class="note sp"><span class="em">💡</span>8/14 FL面談の想定問答を作成。🔴 §1の「辞退前提」が 8/07 の方針転換より古いのを発見</div></div>
+<div class="row"><div class="note sp"><span class="em">💡</span>週次レビューの結論が1本ひっくり返った＝プロジェクトの配信サイト作品が「落ちている」は見えていなかっただけ（未ログイン58件 → ログイン済み78件＝欠測20作）</div><div class="note ask"><span class="em">📌</span>X＝リプ返信1本（送信済み）＋常温レーンで2本予約（8/12・8/15）＋日次まとめ由来を1本手動投稿</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>8/8 に決めた「夜は東方Hardとテラリアを気分で行き来」の枠を、さっそく東方側で使った日</div><div class="note ask"><span class="em">⏭</span>感想は 8/10 にれいあから共有予定（受け取ったらここに追記する）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>1日のまとめの4工程のうち、Xインフォグラだけれいあ判断で見送り（3:3x）</div><div class="note sp"><span class="em">🔑</span>規範どおり文面は作らず、題材だけネタ池へ落とした（ の ♻️ ブロック）＝掘り起こしは週次レビューの担当</div></div>
+<div class="row"><div class="note q"><span class="em">⚠️</span>「ストックに積む」逃げ道は使っていない</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
