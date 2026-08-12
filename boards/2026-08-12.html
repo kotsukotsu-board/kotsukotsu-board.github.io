@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-08-12</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-08-12</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note res"><span class="em">💰</span>収益方針を組み直した＝月30万目標／主軸はストック型・FL応募は保険</div><div class="note ask"><span class="em">📌</span>loop に reach（届ける）レーンを新設し、3件に1件は届ける側を引く形へ（commit 22fafcd8 / aaa5181c / 879ce17d・テスト2059件緑）</div></div>
+<div class="row"><div class="note ask"><span class="em">🌸</span>お姫様の庭＝本番デプロイ＋スマホ実機FB2件＋食虫花→きのこ＋プレイ記録が開通（友人のプレイが1件も記録されていなかった）</div><div class="note sp"><span class="em">🧙</span>マジックコード＝3日繰り越しの実機ゲート通過＋番人2本。「敵が強すぎ」の正体が強さではなかった</div></div>
+<div class="row"><div class="note ask"><span class="em">🖼</span>アトリエ＝夜バッチ33本すべて ok／選択ツール3件改善／アニメプレビュー新設</div><div class="note ask"><span class="em">🎬</span>動画＝ネタ19案 × 始点終点ペアで種画像54枚</div></div>
+<div class="row"><div class="note ask"><span class="em">🧹</span>PCが重い原因＝vite 1本が8.6GB。落として空き 4.3→10.1GB</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>同じゲームでも「操作の手触り」と「戦闘の設計」は別評価＝アクションは面白い／戦闘は楽しいと言いがたい／ちょっと不便、が同居している</div><div class="note sp"><span class="em">🔑</span>やめ方が「飽きた」ではなく「作業になったから」＝ボスノーダメ・装備コンプリートのような時間で殴る実績が離脱点</div></div>
+<div class="row"><div class="note ask"><span class="em">⇒</span>自作ゲームで「やり込み」を足す時、時間で殴る形は同じ場所で切られると読める</div><div class="note q"><span class="em">⚠️</span>Moonlighter の感想8点をどのゲームに寄せるかは未決（ の🟠欄・8/10受領で3日目）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>今日の評価はその判断材料になる</div><div class="note q"><span class="em">⚠️</span>遊ぶ枠は空かない＝Moonlighter が終わってもテラリアが入る</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>下の🌱の仮説（実機チェックは遊ぶ枠と同じ財布）は明日も同じ条件が続く＝n=2 を観測できる機会</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>節約の意図はあったが、ゲーム制作が楽しくて思ったより使った＝制限が破れた原因が「必要に迫られて」ではなく「楽しいから」</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
