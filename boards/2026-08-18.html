@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-08-18</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-08-18</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>21:02〜21:06 配信プラットフォームの作品ページが、ログインしていない人には見えなかった</div><div class="note q"><span class="em">🔴</span>テスト緑のあと実走したらバグが出た＝--file が同じファイル内の写植の設定値の表まで拾ってセリフ扱いしていた。回帰テスト2件を足して「セリフ一覧」節に限定した</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>実走の結果＝W32 5/7 赤（手測りと一致）／書き直し案 6/6 緑</div><div class="note sp"><span class="em">🔑</span>決定的なのは「字数の関所は7本とも通っている」＝形式は全部合格していて、それでも伝わっていない</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>11:5x 漫画1コマが見劣りする件を、実物で診断した</div><div class="note sp"><span class="em">🔴</span>PCが重い正体＝ComfyUI の2重起動で H3 の動画ジョブが5時間ハング</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>utilization.gpu は100%と出るのに power.draw 65W/285W・utilization.memory 1%＝1ステップも進んでいなかった</div><div class="note sp"><span class="em">🔑</span>命令名の対応表（eclmap）は公開されていない＝3経路当たって全部空振り</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>4回目を打たずに経路を変えて、ECL自身の使われ方から意味を絞る道具を書いた</div><div class="note sp"><span class="em">🔑</span>命令番号の下1桁が作品をまたいで保存されていた＝th10 の ins_404/405/406 と th15/th18 の ins_604/605/606 が同じ役割（角度／速度／弾数）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>ins_23 が待ち。⇒ 難易度の軸は4つで全作品共通、違うのは配分だけ</div><div class="note ask"><span class="em">🎯</span>「4段を全部別々には作らない」が数字になった＝4段とも違う値の割合が th10 5.6% / th15 16.0% / th18 42.9%＝新しい作品ほど細かい</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>札を数えても分からない。値が何通りあるかを数えて初めて出る</div><div class="note ask"><span class="em">🔴</span>処理落ちは無かった。真犯人は弾数制限（れいあの実機スクショが決め手）＝FPS 788 / 最悪2.8ms / draw 31 / batch 31</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>リアの推測（SpriteMask がバッチングを壊している）は外れ</div><div class="note ask"><span class="em">🔴</span>既存44本のうち spell_013_absolutezero だけが上限に張り付いていた（supp 109・他43本は0）＝本物のスペルが1本、設計どおりの弾幕を出せていなかった</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>上限を1100にして解消（スコア 51→56）</div><div class="note ask"><span class="em">🎯</span>dsim の目盛りはれいあの体感を再現できる（3件で確認）＝穴なし版で4本とも完全一致（れいあ「通常 &lt; 速度 &lt; 数 &lt; 待ち」／dsim「20 &lt; 24 &lt; 34 &lt; 35」）</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>段③＝ダメージの戻り値を書き換えられた。🔑 やって初めて分かった＝2つのメソッドが数珠つなぎで、両方に掛けると倍率が2回かかる（設定2倍が実質4倍）</div><div class="note res"><span class="em">✅</span>段⑤＝「自分の攻撃だけ2倍」が成立。🔑 推測を埋め込む前に、外れたら分かる形にした＝ログに生の値を出す＋設定で反転可能</div></div>
+<div class="row"><div class="note q"><span class="em">⚠️</span>段④で [who] が12行とも敵→自分だったが、これは序盤12回で打ち切った偏り。30行に増やしたら両方向出た＝サンプルの打ち切りが結論を歪めた実例</div><div class="note ask"><span class="em">🎯</span>目的が決まった＝A（測る道具にする）。🔴 第一歩は「4本のレベルデザインの穴を調べる」＝穴が先、教材が後</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>やめる条件を先に置いた＝1本目（AutoRogue → 限界突破ダンジョン）で実際にゲームの数字が1つ変わらなければ、ナレッジ集は作らない</div><div class="note q"><span class="em">⚠️</span>最大のリスク＝4本のジャンル差。共通の物差しを先に作ると抽象的すぎて死ぬ。1ジャンルずつ（東方×dsim が成功した形）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>確信度＝「1ジャンルで成立」は高／「4ジャンル共通になる」は低〜中</div><div class="note ask"><span class="em">🔴</span>前回の「有効タグ」は再現しなかった＝カテゴリーA 8.6% → 3.7%／カテゴリーB 6.9% → 3.9%</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>当時はサンプル n=4・閲覧数16〜36の初期段階作品を見ていた統計数字だった</div><div class="note ask"><span class="em">🔴</span>唯一はっきり上に外れたのは衣装系で、その効果が 7.4%（n=7）だが、閲覧数の帯をそろえて比べ直しても 8.9%(n=5) ⇔ 4.5%(n=31) で帯が重ならない</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>閲覧数はタグでほとんど動かず、動いているのは「見た人の何人が保存するか」であって「何人が見るか」ではない</div><div class="note q"><span class="em">⚠️</span>外れる方の筋として、衣装系はまだ7作で、2〜3作の当たりで変動する規模なので、次に7作足したら効果が消える可能性がある</div></div>
+<div class="row"><div class="note ask"><span class="em">🐛</span>途中で見つけた壊れとして、プラットフォーム統計取得が 8/11 から0件だった（関数がタプル返却に仕様変更したのに単一値で受けたまま）</div><div class="note q"><span class="em">🌀</span>番人は毎日2回動いていて中身が空のまま記録だけ伸びていたが、1行の修正で 88作品/失敗0 に回復した</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>判定として、衣装系を意図的に増やしてサンプル n を倍にし、9月に測り直す（参考ID_A）</div><div class="note q"><span class="em">⚠️</span>全部を衣装系にしないこと（比較対象が消えると差が測定できない・目安は10本中7本）</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>れいあ指摘で数え方を訂正した＝当初リアは「面談2件（8/19・8/24）」と書いたが、8/24 はエージェントとの初回面談で選考ではない</div><div class="note ask"><span class="em">⇒</span>企業との選考面談と、エージェントの登録・条件面談を混ぜない。数を大きく見せる方向の誤りは一言で崩れ、失うのは数字ではなく信用のほう</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>訂正したら圧はむしろ強くなった＝締めが「8/19と8/24が終わると出そろう」→「8/19の結果が出しだい」になり、締切が 8/24 → 8/19（明日） に前倒しになった</div><div class="note ask"><span class="em">📝</span>れいあの手直し1件を台帳化＝「先方へのご確認ありがとうございます」→「ご確認ありがとうございます」。理由＝まだ確認してもらっていないから</div></div>
+<div class="row"><div class="note ask"><span class="em">⇒</span>お礼は「もう起きた事実」に向ける</div><div class="note ask"><span class="em">🔴</span>2028年6月が「コスト構造が変わる日」＝任意継続は2年固定（2026-06〜2028-06）で、所得が増えても保険料が上がらない</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>21:50〜22:0x note を1本公開した</div><div class="note ask"><span class="em">📌</span>21:4x〜23:2x note の育て方（配膳型）を設計して実装まで通した</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>自走レーン（autopilot）— 41周＋α</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">🔀</span>BarRaider プラグインを使う経路をやめた＝GitHub に配布が無く、入れなくても同じことができる（切替の実体はもう にある）</div><div class="note ask"><span class="em">⇒</span>プラグイン導入・再起動・設定の3手間がまるごと消えた</div></div>
+<div class="row"><div class="note q"><span class="em">🔴</span>迷ったら A1（鳴る側）へ倒す設計にした＝両方ON・両方OFF・読み取り失敗のどれでも A1 へ。「押したのに無音」を作らないため</div><div class="note ask"><span class="em">🩹</span>れいあに渡す前に自分で走らせて、穴を2つ塞いだ＝①set が rc=0 なのに表示が1手前の値だった（VBVMR_IsParametersDirty を呼ぶまで古い値が返る仕様）②pythonw から呼ぶと print が全部落ちる（コンソールが無い）</div></div>
+<div class="row"><div class="note ask"><span class="em">⇒</span>ログファイルへ逃がす形にした。窓が無い＝画面では確かめられないので、記録が残る側に倒す</div><div class="note ask"><span class="em">🔴</span>古い StreamDeck ボタンは、いまや"押すと壊れる"側に変わった＝Windows既定を直接差し替える型なので、押すと仕組みごと無効になる</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>手を入れたことで、今まで無害だったものが有害に変わった</div><div class="note res"><span class="em">✅</span>ブツブツの犯人はバッファで、ついでに壊れていた OBS も直した</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note q"><span class="em">⚠️</span>二重ルーターは見つけたが触らない（遅延の実害は1ms未満）。困るのはポート開放・UPnP・対戦のNATタイプだけ</div><div class="note q"><span class="em">🔴</span>測定の失敗が「良い結果」に化けた＝1本目のスクリプトは speed test が403で下り0.0Mbps（＝負荷ゼロ）なのに、バッファブロートはA（優秀） と表示された</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>負荷がかかっていないのだから当たり前で、 そのもの</div><div class="note sp"><span class="em">🔑</span>「速度」を測っても意味がない類の診断がある＝あの投稿の話は速度でなく負荷時の応答性。⇒ 回線を埋めてから測る</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>18:10〜18:25 「〜なら問題は起きないはず」を書いた瞬間が、検証すべき瞬間だった</div><div class="note ask"><span class="em">📌</span>今日1日で4回出た型 —「仕組みは在るのに使われていない」</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
