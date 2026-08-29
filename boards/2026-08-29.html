@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-08-29</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-08-29</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>feat(dashboard): 自律運用に進捗ビューを追加</div><div class="note ask"><span class="em">📌</span>feat(secretary): 日次投入に perDay を足して なな を1日2本にする</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(leia-ip): セリフの声パックを新設し、フキダシの型と写植の関所を正本化</div><div class="note ask"><span class="em">📌</span>chore(drafts): CW応募文2件とXのループチェック投稿案を足す</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>chore(drafts): X週次ストック3本を足す</div><div class="note ask"><span class="em">📌</span>chore(briefs): 2026-08-28の1日まとめを足す</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>chore(drafts): note図の元HTMLを足す</div><div class="note ask"><span class="em">📌</span>chore(drafts): なな9本目（送付先リストの重複）の素材一式を足す</div></div>
+<div class="row"><div class="note q"><span class="em">⚠️</span>判断で気をつけた点</div><div class="note ask"><span class="em">📌</span>追記（10:3x〜11:1x）＝MacroLab を公開した（ts_229 の①）／🔴 公開直前に exe の中の本名メールを見つけた</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>公開ずみ → publish・れいあがボタンを押した）</div><div class="note res"><span class="em">✅</span>原因＝モデルが1個も無いまま投げていた（HTTP 400 ×12・所要2秒）</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>リアの落ち度2つ（どちらも直して実測ずみ）</div><div class="note ask"><span class="em">🔴</span>直近8週＝投稿8本・表示99・反応は完全にゼロ</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>ネタは「道具で撮れるか」で絞った</div><div class="note ask"><span class="em">📌</span>① q_729「画像生成の枠を使い切る」→ 今日は動かさず 9/02 へ送った</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>② q_791「投稿カレンダー 自動配膳」→ 実装せず park（r_442）</div><div class="note ask"><span class="em">🔴</span>3つとも「静かに壊れる」ので、表には症状を書いた</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>6周目の教訓を実践した</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
