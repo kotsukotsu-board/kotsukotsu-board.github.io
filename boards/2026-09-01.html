@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-09-01</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-09-01</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>feat(secretary): 応募の漏斗台帳と動くデモ3型の応募文テンプレ・母数を増やす構造のブリーフ</div><div class="note ask"><span class="em">📌</span>chore(git): 出品サムネ画像と金融明細PDFを管理外にする</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>fix(secretary): 自走キューのネタ台帳が4日間読めていなかったのを直す</div><div class="note ask"><span class="em">📌</span>feat(linestamp): 動くスタンプのAPNG化をセット一括のシステムに完成させる</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>スタンプのプロンプトに v2（型に寄せた版）を足した</div><div class="note ask"><span class="em">📌</span>Codex にレビューさせて、指摘を3つ受けた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>使い捨てスクリプト（再現の手順つき）</div><div class="note ask"><span class="em">📌</span>焼けたのは 24本中 15本。全部ちゃんと出ている</div></div>
+<div class="row"><div class="note sp"><span class="em">💡</span>赤の正体＝expect.glob が _v2 に追随していなかった</div><div class="note ask"><span class="em">📌</span>追記（11:4x）＝CW応募文2本を書いた／れいあ持ち込み2件を測った</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>書いた2本（貼るだけの .txt）</div><div class="note sp"><span class="em">🔑</span>8/31 に2回続けて目安を落とした構造を、今回は別の口で回避した</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>見つけたもの＝提出物に内部メモが4箇所残っていた</div><div class="note ask"><span class="em">📌</span>① ブログ在庫のカードは作らなかった（鳴っていないから）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>② note のネタは3件を1枚のカードにした（r_474・れいあ30秒）</div><div class="note res"><span class="em">🔑</span>れいあの補足で見立てが1つ直った</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>朝のトレンドブリーフを送った（未消化1件の消化）</div><div class="note res"><span class="em">🔴</span>その途中で既出をすり抜けさせた＋原因を直した</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
