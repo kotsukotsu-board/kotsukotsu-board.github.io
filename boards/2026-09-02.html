@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-09-02</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-09-02</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>fix(shortcuts): もしもの窓の起動URLが404だったので mypage/top に変える</div><div class="note ask"><span class="em">📌</span>docs(note): 有料道具の材料に訂正＝CSV差分チェッカーは 2026-08-17 に公開ずみ（出品直前ではなかった）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(secretary): 応募の漏斗に商談の段を足して4段にする（どこで落ちているかを名指しする）</div><div class="note ask"><span class="em">📌</span>feat(xenty): xenty_register＝X投稿の登録を repo の1本にして、1投稿に画像1〜4枚を積めるようにする</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(secretary): 棚の「れいあ待ち」を誰の番かで3行に割る＋実読監査で分類を直す</div><div class="note ask"><span class="em">📌</span>feat(x-research): X監視リストの候補表＝候補txt＋probe JSON を突き合わせて、れいあが○を付ける1枚を書く</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>「電話が来なかった」は誤りで、正しくは「断られた通知が未読で埋まっていた」</div><div class="note ask"><span class="em">🔴</span>断られた理由は「職種」であって「帯広・フルリモート」ではない</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>髪色の直しは効いた（実測・正本と一致するところまで戻った）</div><div class="note q"><span class="em">⚠️</span>「17本すべて緑」は「良い動画」ではない</div></div>
+<div class="row"><div class="note res"><span class="em">🔴</span>追記（12:1x）＝コミットで事故を1つ起こして、直した</div><div class="note ask"><span class="em">📌</span>追記（12:2x・session-4）＝れいあ裁定 1（いまコミットする）。3本に分けて入れた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>追記（12:1x〜12:2x・session-1）＝書いている間に「外向きの一手」がひっくり返った</div><div class="note ask"><span class="em">🔴</span>追記（12:2x）＝きょうの応募キットは、れいあの記憶で止まった（リアの拾い間違い）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>追記（13:1x）＝れいあ手直し2回。どちらも「型を守ることを、事実を書くことより優先した」形</div><div class="note ask"><span class="em">📌</span>①「実際にやったこと」が入っていない ⇒ れいあ判定＝自分の話として薄い（3択で本人が選択）</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>池入れに①を選んだ理由＝うちの穴の名前が、この記事で付いた</div><div class="note ask"><span class="em">🔴</span>玄関を「いま落とさなかった」判断＝理由は危険でなく割り込み</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>追記（14:3x・session-5）＝宿題①を片付けて、BTM の求人票を実物で読んだ</div><div class="note res"><span class="em">✅</span>宿題①＝職務経歴書から基本情報ブロックを削除（完了・実物で検算）</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>self（リアの実装待ち）判定は、10件中7件が誤りだった</div><div class="note res"><span class="em">✅</span>直した4周（すべて実データから語を採った・推測で足したものは無い）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>追記（14:2x・session-5）＝nowboard の3答えを正本へ反映（年収・レーン・ECサイト）</div><div class="note ask"><span class="em">🔴</span>いちばん重い＝正社員レーンの狙い先が変わった</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
