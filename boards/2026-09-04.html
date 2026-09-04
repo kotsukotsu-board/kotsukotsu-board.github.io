@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-09-04</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-09-04</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>docs(drafts): X リプ下書き・note タイトル案・地元事業者向けデモ一式</div><div class="note ask"><span class="em">📌</span>feat(secretary): note の売上を関所が開いている間に取り切る</div></div>
+<div class="row"><div class="note ask"><span class="em">👁</span>「もう在るか」を実物で当てて、2件が空振りを免れた</div><div class="note res"><span class="em">🔴</span>いちばん重い発見＝Wan 2.2 の比較が「✅」で記録されたのに、1本も焼けていない</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>自作IP向け送客の判定を記述して作業を終了し、関連する別項目として保留状態に移動させる</div><div class="note ask"><span class="em">📌</span>② q_908（発信の在庫補充）→ done</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>判定の結果（Codex・scratchpad/codex_verdict.txt）</div><div class="note ask"><span class="em">🔴</span>数字の帯は、3本中2本で判定を外していた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>① ボードの回答3件を回収して、全部「行き先」まで作った</div><div class="note ask"><span class="em">📌</span>② q_893（なな：赤ラベルの置き場）＝9本ぜんぶに当てた</div></div>
+<div class="row"><div class="note sp"><span class="em">🔴</span>顔ブロックが3つ目を必要としていた（今日いちばん効いた発見）</div><div class="note ask"><span class="em">🔴</span>Codex 3回で、機械が1つも拾えない層の指摘が7件出た</div></div>
+<div class="row"><div class="note sp"><span class="em">🔑</span>layout_check（自作の番人）が緑を出したまま、Codex だけが見つけた層が3つある</div><div class="note ask"><span class="em">🔴</span>いちばん重い＝リアの前提が間違っていた（れいあ本人が訂正・記録上3回目）</div></div>
+<div class="row"><div class="note ask"><span class="em">🔴</span>定期更新スクリプトの強制実行モードが『再取得可能』と案内しながら、実際には1度も実行されていなかった</div><div class="note ask"><span class="em">📌</span>素材販売前に動画プラットフォームで反応を測定する計画が判断基準になっているが、前提条件が失効している</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
