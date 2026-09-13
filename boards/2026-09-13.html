@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-09-13</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-09-13</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>16:0x note を1本公開して、そのまま客の目で通した</div><div class="note ask"><span class="em">📌</span>13:0x〜14:0x 活動の整理＝止まっていたものを実際に落とした</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>23:0x〜00:0x 共有棚に「値の賞味期限」を入れたら、台帳の食い違いが2つ出た</div><div class="note ask"><span class="em">📌</span>終日、自作キャラのデジタル作品を再生成したところ、「らしさ」が戻った</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>夜 東方紅魔郷のリメイクを買った</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>昨日はじめた「Notion をかませた ChatGPT」が今日1日ちゃんと回った</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>chore: 重い一時物を版管理から外す（74MB混入の再発防止）</div><div class="note ask"><span class="em">📌</span>docs: ブリーフと下書きの更新をまとめる（重いものは除外）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>fix(secretary): 起動フックと規範・設定の更新をまとめる</div><div class="note ask"><span class="em">📌</span>feat(tools): 調査・計測用のスクリプトを版管理に入れる</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(scripts): LINEスタンプ制作とリモート実行のスクリプトを版管理に入れる</div><div class="note ask"><span class="em">📌</span>01:4x 追記｜notion MCP の承認を外した</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>① 結果（6本・全部 ok / 実物あり）</div><div class="note ask"><span class="em">📌</span>② 「戻らない版」が狙いどおりかを機械で測った（先頭コマ↔末尾コマの平均差）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>① れいあの選定は、原因と完全に一致していた</div><div class="note ask"><span class="em">📌</span>② 原因は3つ。どれも B章だけに出ていた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>② Codex 判定＝22枚とも「同一人物」○。前後比較は7組すべて改善</div><div class="note res"><span class="em">✅</span>① 直したのはカメラ行1行だけ</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>② 積んだ（🔴 走らせるのはれいあ）</div><div class="note ask"><span class="em">📌</span>① れいあの「3かな？」は番号どおりではなかったので翻訳した</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>② 7日ぶんのポーズ・表情を、確定セリフに合わせて書き直した</div><div class="note ask"><span class="em">🔴</span>新しく見つけた穴＝ランサーズ Access 案件が漏斗から丸ごと抜けていた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>① 焼けた（技術面は問題なし）</div><div class="note ask"><span class="em">📌</span>② 🔴 中身が指定どおりではない（シートを自分で見た）</div></div>
+<div class="row"><div class="note ask"><span class="em">🚩</span>残したフラグ（次に触る人へ）</div><div class="note ask"><span class="em">🔴</span>リアの誤り（今日6回目・全部同じ形）</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
