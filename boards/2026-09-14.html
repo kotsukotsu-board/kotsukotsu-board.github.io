@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-09-14</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-09-14</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>06:32、自作IP企画のストーリー第B章における252枚のビジュアル制作が完走して、次の「選ぶ」段階へ移行した</div><div class="note ask"><span class="em">📌</span>終日 3回外して、4回目の前に経路を変えた ── そこで前提そのものが崩れた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>15:05 デバイス系アカウントの3週連続0本が止まった</div><div class="note ask"><span class="em">📌</span>夕方 応募まわりで、同じ形の事故が1日に2件出た</div></div>
+<div class="row"><div class="note sp"><span class="em">💡</span>夜 「効果があったか」を測ろうとして、そもそも測れないと分かった</div><div class="note ask"><span class="em">📌</span>深夜 あいとの往復が「コピペなし」で3周まわった</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>夜 東方紅魔郷リメイク ── 魔理沙Bは追尾弾が無いぶん被弾が増える</div><div class="note ask"><span class="em">📌</span>FF14 ── 魔獣のレベルが全部20台に乗った</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>アニメ ── 無職転生（今週は未来のルーデウスが来る回）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note res"><span class="em">✅</span>友人に送ったずんだもんの仕組みが「できた」と返ってきた</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>12:4x session-1｜今日のTODOを作った（朝の箱①）</div><div class="note ask"><span class="em">📌</span>② 実物で当てた（記録ではなくファイル）</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>① 🔑 直した中身＝正本の「構図の線」を自然文のまま入れ直した</div><div class="note ask"><span class="em">📌</span>② 検証（機械で照合してから積んだ）</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>① 🔑 れいあの指摘を、プロンプト側で裏取りした（感想ではなく事実として確認できた）</div><div class="note ask"><span class="em">📌</span>② ⑦の道具＝ を作った</div></div>
+<div class="row"><div class="note q"><span class="em">🌀</span>① 🔴 バグだった＝ は「器が無いページ」専用だった</div><div class="note ask"><span class="em">📌</span>② ③ 相談キットを2本書いた（論点が違うので分けた）</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>辿れた。ただし4手かかった</div><div class="note ask"><span class="em">🔴</span>食い違いが5つ出た（うち1つは実行すると絵が崩れる向き）</div></div>
+<div class="row"><div class="note ask"><span class="em">🔁</span>リアの別案＝「本体」でなく「索引」にする</div><div class="note res"><span class="em">✅</span>① 表現ガイド v2 ＝リアの5指摘は全部入っていた</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>② 相談ログに「次の担当」列を足した（A19 の実装依頼）</div><div class="note ask"><span class="em">🔴</span>発信者収集スレが 次の担当＝CC に戻っていた（あいが A20 で指摘）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>自作IP企画のタスクスレッド（項目66・67の回答）は、その内容がタスク管理プラットフォームにのみ存在している</div><div class="note ask"><span class="em">🔴</span>判定の核心＝「余裕があるか」ではなく「出す先が今あるか」だった</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
