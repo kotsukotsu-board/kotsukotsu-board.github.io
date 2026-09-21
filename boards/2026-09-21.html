@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-09-21</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-09-21</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>23:1x 商談まで行った5件で、提案を1枚も送っていなかった（session-2）</div><div class="note ask"><span class="em">📌</span>21:2x ココナラの受付中3枠のうち2枠が受付休止中だった（session-1）</div></div>
+<div class="row"><div class="note res"><span class="em">✅</span>完了検出＝3条件×10ケースで一致6/10・拾えた1/5</div><div class="note ask"><span class="em">📌</span>一次選別＝30件で HTTP 429 停止。Jev「残す」3件のうち当たり38%／単純ルール13件は88%</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>gold set＝実装前の設計を1本（コードは0行）。判断2つはあいとれいあへ返した</div><div class="note ask"><span class="em">📌</span>13:4x／14:3x なな Reels 2本目を公開・device_lab GHUB を実投稿</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>14:1倍〜16:5倍の自作キャラクター素材で、10月2日に本番カット24枚をSNS代表画像に選定した</div><div class="note ask"><span class="em">📌</span>14:4x〜15:1x 職務経歴書・スキルシートに個人開発の実績を入れた</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>番人5本が Bash 経由の書き換えを素通りしていた（PostToolUse フックが Write|Edit しか match していなかった）</div><div class="note ask"><span class="em">📌</span>毎回ロード層が 44,342字 → 80,563字（20日で+82%）。9/01 に半分へ削ったぶんが元より太っていた</div></div>
+<div class="row"><div class="note q"><span class="em">⚠️</span>16:34 二重起票で共倒れ（session-82 ほか）</div><div class="note q"><span class="em">⚠️</span>測る系の予約が2日連続で未消化</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>夜 東方紅魔郷（リメイク）── EX に再挑戦</div><div class="note ask"><span class="em">📌</span>アニメ 蜘蛛ですが、なにか？（あいのおすすめ）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>終日 「枠が余っているから環境整備に使う」と決めた日</div><div class="note ask"><span class="em">📌</span>3日で3回、「入口が閉じていた」が出ている</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>session-1｜今日のTODO：今日の3つを決める＋自走ぶんの測定</div><div class="note res"><span class="em">✅</span>11:31 ブログ post 2591（Cloud Alpha Air vs H6 Air）の公開直前チェック → 修正不要で閉じた（ts_579 / ts_594）</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
