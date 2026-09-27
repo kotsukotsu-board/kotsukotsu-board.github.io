@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-09-27</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-09-27</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>Electron で新規に作成。1日で2段目まで（ターミナル・会議室の埋め込み・自走のようす・成果確認・予定・確認ボードの引き出し）</div><div class="note ask"><span class="em">📌</span>れいあが VSCode を落として完全に移行。手順書 を新設</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>れいあ「危険なもの以外は区切りごとにコミットしてよい」</div><div class="note ask"><span class="em">📌</span>スタッフがキャラクターの顔の統一性を改善したいと指摘。既存技術は試したが効果が限定的。顔の形指定と特定表現の除去を本番化し、部分修正では『わずかな改善』に留まることを確認</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>10月分を表情の説明文つきで再生成し、スタッフが選定。キャラクター素材を配信プラットフォーム向けに10月1日〜10日に予約</div><div class="note ask"><span class="em">📌</span>AI言語モデルによる目の品質評価テストとスタッフ選定結果の一致率は33%と低調</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>gaminglife の新規4本（10/9・11・12・14）を予約</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>れいあ実言＝「コックピット作るのが楽しすぎて、1日費やしてしまった」</div><div class="note ask"><span class="em">📌</span>昼に「しばらくゲームをしないから、そのまま生成を進めて」</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>日曜＝曜日の役割では休み。でも楽しくて手が止まらなかった日</div><div class="note sp"><span class="em">🔑</span>次の日（9/28）は「仕組みを足さずに1日回す」とれいあが自分で決めている</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(workbox): 受け取り箱＝相談・思いつき・CC への渡しを着地するまで消さない入口（推測した作業は確認へ・許可にはれいあの言葉と判断メモ・7日以上未着手と前提変更は確認へ・Notion へ移した後の変更は変更依頼の子・おさらいは24時間か待ち明け）／着手待ちを Notion のタスクへ移して状態を写す push／見張りがあいの「次の担当：CC」を未整理で受け止める</div><div class="note q"><span class="em">🌀</span>fix(relay): 棚保存の失敗は行の頭の状態行だけ拾う（本文で言葉を引用しただけの返答を拾わない）</div></div>
+<div class="row"><div class="note q"><span class="em">🌀</span>feat(relay): 棚保存の失敗を手元に残す見張り（shelf_watch・コックピットの予定で15分おき・Notion へ戻すのは司令塔）</div><div class="note ask"><span class="em">📌</span>chore(schedules): コックピットの予定に「日付が変わったら1日のまとめ」（毎日 0:00）を登録</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>docs: コックピットの予定（スケジューラ）とあいへの知らせの1本目を手順書に</div><div class="note ask"><span class="em">📌</span>fix(relay): ハブ（知らせるだけの部屋）が送れたか分からないで止まっても解いて次を送る（q_1525 の届いていない あい宛の二段目を含む）・コックピットの予定に「あいに Notion の更新を知らせる（15分ごと）」を登録</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>12:3x にキャラクター素材の10月7日表情A/B版候補（自動生成バッチ379・380）の確認を別セッションで実施</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
