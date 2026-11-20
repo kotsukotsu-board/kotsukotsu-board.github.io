@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-11-20</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-11-20</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>B案（気持ちに寄りそう）→ 縁側をベースに「角張って温かみが薄い」を調整して7頁を公開。12:40 に応募（本人）</div><div class="note ask"><span class="em">📌</span>「AIが何でもできるから何をやったら良いかわからない・副業として成功する方法がわからない」（本人の言葉）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>Chatwork の部屋へ、あいさつと質問2つ → 先方の5問への答えを送信（本人）</div><div class="note ask"><span class="em">📌</span>Leia.dev・とまりぎ・works を公開（本人「実行して」）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>シオリの学習の型＝ep8（選択1）。立ち絵の仮＝目を開けた4枚の3枚目。「今のキャラデザだとモチベが上がらない気がして」＝ゲームへ入れるのは止めた</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>今週のプレイリストが28曲そろった（YouTube Music）</div><div class="note ask"><span class="em">📌</span>久しぶりの固定。絶ケフカ（絶妖星乱舞）を学者で。テンポが早くてびっくり・約2時間で P1 突破・P2 も何回か練習（本人）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>第24話（1周めの最後）はまだ。「お風呂上がってきたらやろうと思う」（本人）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(leia_daily): 今日の段と絵を読むだけで返す status を足し、制作管理で見られるようにする</div><div class="note ask"><span class="em">📌</span>feat(works): 料金と期間の目安・連絡の入口・全国対応・SAMPLE 03 の範囲を足す</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>fix(tools): 今週のプレイリストの入れ替えを差分だけにして、短い動画を後ろに回す</div><div class="note ask"><span class="em">📌</span>fix(hobby): 毎週のプレイリストを枠に関係なく金曜に組む</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
