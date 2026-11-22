@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>きょうの作業ボード — 2026-11-22</title>
+<style>
+  :root{
+    --bg:#eef3f6;--ink:#2b3a44;--sub:#5d7488;
+    --y:#ffe27a;--p:#ff9db0;--b:#9fd0f5;--g:#9be6b4;
+    --hand:"Yu Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;
+    --serif:"Yu Mincho","Hiragino Mincho ProN",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--hand);color:var(--ink);line-height:1.65;
+    background:
+      radial-gradient(circle at 18% 8%,rgba(255,226,122,.14),transparent 42%),
+      radial-gradient(circle at 85% 26%,rgba(159,208,245,.16),transparent 46%),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(43,58,68,.045) 32px),
+      var(--bg);
+    padding:40px 20px 60px;
+  }
+  .wrap{max-width:640px;margin:0 auto;}
+  header{text-align:center;margin-bottom:20px;}
+  .tape{display:inline-block;background:rgba(255,210,63,.6);border:1px dashed rgba(43,58,68,.35);
+    padding:2px 16px;font-size:12px;letter-spacing:.15em;transform:rotate(-1.4deg);margin-bottom:10px;}
+  header h1{font-family:var(--serif);font-size:26px;letter-spacing:.03em;transform:rotate(-.5deg);line-height:1.4;}
+  header h1 .u{background:linear-gradient(transparent 62%,var(--y) 62%);padding:0 4px;}
+  header p{color:var(--sub);font-size:13px;margin-top:8px;}
+  .row{display:flex;justify-content:center;margin:4px 0;}
+  .note{
+    position:relative;width:400px;max-width:92%;padding:18px 20px 16px;font-size:16px;font-weight:600;
+    box-shadow:3px 5px 12px rgba(43,58,68,.2);
+    border-radius:255px 14px 225px 14px/14px 225px 14px 255px;
+  }
+  .note::after{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-4deg);
+    width:56px;height:18px;background:rgba(255,255,255,.55);border:1px solid rgba(43,58,68,.18);}
+  .note .em{font-size:22px;margin-right:4px;}
+  .note small{display:block;font-weight:600;font-size:13px;color:rgba(43,58,68,.72);margin-top:6px;}
+  .note.q{background:var(--p);transform:rotate(-1.2deg);}
+  .note.ask{background:var(--b);transform:rotate(1deg);}
+  .note.sp{background:var(--y);transform:rotate(-1deg);}
+  .note.res{background:var(--g);transform:rotate(.8deg);}
+  .arrow{text-align:center;font-size:30px;color:var(--sub);line-height:1;margin:2px 0;}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:26px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="tape">KOTSUKOTSU BOARD ／ きょうの作業</div>
+    <h1>きょうの作業ボード<span class="u">2026-11-22</span></h1>
+    <p>AIと一緒に作って、気づいて、直した1日 ｜ Leia</p>
+  </header>
+
+  <div class="row"><div class="note ask"><span class="em">📌</span>候補3つから案A「AI入力くん」（本人）。題は案1、値段と紹介料は選択1。本文・題を本人が貼った</div><div class="note ask"><span class="em">📌</span>町の看板の字が「はみ出している」（本人の指摘）→ 2回直してコミット OK。町の発展は段2と一緒に作る（選択1）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>シオリの声＝B →「男の子っぽい」→ やり直し → N6 →「ハキハキ」→ A1 に決定</div><div class="note ask"><span class="em">📌</span>「まずは完成を」。ゲーム名は出さない。アカウントは Leia 名義で新しく作った（選択1）。ショート版もやる（選択1）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>長尺は VOICEVOX・語り手はキャラ本人。長さは今回4〜5分で、続けながら伸ばす。YMM4 は外から組む形（選択2）</div><div class="note ask"><span class="em">📌</span>指摘＝「ずんだもんが壁に向かって話している」</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>固定のための予習と、固定の活動（本人）。固定の時間で作業を区切った</div><div class="note ask"><span class="em">📌</span>余裕が無いフェーズだと、ほかのゲームやアニメ鑑賞の気分にならない（本人）</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note sp"><span class="em">💡</span>動画をつくりながら「動画の作り方の基礎を学びたい」</div></div>
+<div class="arrow">↓</div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(tools): YMM4 で開発日誌の動画を組む道具と、YouTube Studio へ保存の直前まで上げる道具</div><div class="note ask"><span class="em">📌</span>feat(tools): 開発日誌の動画を場面表から組む道具（ワイプ・立ち絵・字幕・見出し・音楽）</div></div>
+<div class="row"><div class="note ask"><span class="em">📌</span>feat(voice): 声を作る道具（ツマミ・学習・材料集め）と、声のサーバーが学習した声の札を読めるように</div><div class="note ask"><span class="em">📌</span>20:1x 霧わたりの動画：YMM4 を外から組めるようにして、長尺の1本めを組んだ（れいあ選択2＝ymm4MCP）</div></div>
+
+  <footer>#AI駆動開発 #個人開発 ／ build in public</footer>
+</div>
+</body>
+</html>
